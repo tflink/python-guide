@@ -219,6 +219,8 @@ simple ini-style configuration file.
 
     `tox <http://tox.testrun.org/latest/>`_
 
+More details are available in the :ref:`tox section of the continuous integration scenario <tox-ref>`.
+
 Unittest2
 ---------
 
