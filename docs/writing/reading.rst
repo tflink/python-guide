@@ -2,14 +2,14 @@ Reading Great Code
 ==================
 
 One of the core tenants behind the design of Python is creating
-readable code. The motivation behind this design is simple: The number 
-one thing that Python programmers do is read code. 
+readable code. The motivation behind this design is simple: The number
+one thing that Python programmers do is read code.
 
-One of the secrets of becoming a great Python programmer is to read, 
+One of the secrets of becoming a great Python programmer is to read,
 understand, and comprehend excellent code.
 
 Excellent code typically follows the guidelines outlined in :ref:`code_style`,
-and does its best to express a clear and consise intent to the reader.
+and does its best to express a clear and concise intent to the reader.
 
 Included below is a list of recommended Python projects for reading. Each of
 these projects are paragons of excellent Python code.
@@ -18,8 +18,8 @@ these projects are paragons of excellent Python code.
   Howdoi is a code search tool, written in Python.
 
 - `Flask <https://github.com/mitsuhiko/flask>`_
-  Flask is a microframework for Python based on Werkzeug and Jinja2. 
-  It's intended for getting started very quickly and was developed with 
+  Flask is a microframework for Python based on Werkzeug and Jinja2.
+  It's intended for getting started very quickly and was developed with
   best intentions in mind.
 
 - `Werkzeug <https://github.com/mitsuhiko/werkzeug>`_
