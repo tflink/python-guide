@@ -333,3 +333,7 @@ Python interpreter for Unix-like operating systems. It has the following feature
 
     $ pip install bpython
 
+Pylint
+------
+
+Pylint is a tool for doing some static analysis in Python code.
