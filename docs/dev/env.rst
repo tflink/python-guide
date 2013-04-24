@@ -336,18 +336,19 @@ Python interpreter for Unix-like operating systems. It has the following feature
 Pylint
 ------
 
-`Pylint <http://www.pylint.org/>`_ is a tool for doing some static analysis in Python code.
+`Pylint <http://www.pylint.org/>`_ is a tool for doing some static analysis in
+Python code.
 
 Installation
 ^^^^^^^^^^^^
 As Pylint is a pure python program, it is relatively easy to install in either
-released form or directly from source. The  method for installing Pylint
+released form or directly from source. The method for installing Pylint
 is::
 
     $ pip install pylint
 
-However, if your operating system has a package management tool (yum, apt, pacman
-etc.) it is generally a good idea to install software from those packages. For
-more detailed instructions on how to best install Pylint on your operating
+However, if your operating system has a package management tool (yum, apt,
+pacman etc.) it is generally a good idea to install software from those packages.
+For more detailed instructions on how to best install Pylint on your operating
 system, see the `Pylint documentation <http://www.pylint.org/#install>`_.
 
