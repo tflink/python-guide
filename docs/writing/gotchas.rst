@@ -128,11 +128,12 @@ What Does Happen
 
 Five functions are created, but all of them just multiply ``x`` by 4.
 
-Python's closures are *late binding*. This means that names within closures are
-looked up at the time the inner function is *called*.
+Python's closures are *late binding*.
+This means that the values of variables used in closures are looked
+up at the time the inner function is called.
 
 Here, whenever *any* of the returned functions are called, the value of ``i``
-is looked up in the surrounding scope at call time, when by then the loop has
+is looked up in the surrounding scope at call time. By then, the loop has
 completed and ``i`` is left with its final value of 4.
 
 What's particularly nasty about this gotcha is the seemingly prevalent
@@ -142,28 +143,32 @@ fact the same exact behavior is exhibited by just using an ordinary ``def``:
 
 .. code-block:: python
 
-    def create_adders():
+    def create_multipliers():
+        multipliers = []
+
         for i in range(5):
-            def adder(x):
+            def multiplier(x):
                 return i * x
-            yield adder
+            multipliers.append(multiplier)
+
+        return multipliers
 
 What You Should Do Instead
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Well. Here the general solution is arguably a bit of a hack. Due to Python's
+The most general solution is arguably a bit of a hack. Due to Python's
 afformentioned behavior concerning evaluating default arguments to functions
 (see :ref:`default_args`), you can create a closure that binds immediately to
 its arguments by using a default arg like so:
 
 .. code-block:: python
 
-    def create_adders():
+    def create_multipliers():
         return [lambda x, i=i : i * x for i in range(5)]
 
 When the Gotcha Isn't a Gotcha
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When you want your closures to behave this way. Late binding is good in lots of
+Sometimes you want your closures to behave this way. Late binding is good in lots of
 situations. Looping to create unique functions is unfortunately a case where
 they can cause hiccups.

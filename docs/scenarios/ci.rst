@@ -35,6 +35,8 @@ Mule?
 
 .. todo:: Write about Mule
 
+.. _tox-ref:
+
 Tox
 ---
 
